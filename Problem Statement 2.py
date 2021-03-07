@@ -132,7 +132,7 @@ seed(1)
 filename = 'Social_Network_Ads.csv'
 dataset = load_csv(filename)
 duplicate_l = copy.copy(dataset)
-for i in range(1, len(dataset[0])-1):
+for i in range(1, len(dataset)):
     str_column_to_float(dataset, i)
 #convert first column to integers
 str_column_to_int(dataset, 0)
